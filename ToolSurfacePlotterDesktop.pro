@@ -1,25 +1,26 @@
 # Fparser does not work with -Weffc++
-include(../../DesktopApplicationNoWeffcpp.pri)
-include(../../Libraries/Apfloat.pri)
-include(../../Libraries/Boost.pri)
-include(../../Libraries/Fparser.pri)
-include(../../Libraries/Qwt.pri)
+include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
+include(../RibiLibraries/Apfloat.pri)
+include(../RibiLibraries/Boost.pri)
+include(../RibiLibraries/Fparser.pri)
+include(../RibiLibraries/Qwt.pri)
 
-include(../../Libraries/GeneralConsole.pri)
-include(../../Libraries/GeneralDesktop.pri)
+include(../RibiLibraries/GeneralConsole.pri)
+include(../RibiLibraries/GeneralDesktop.pri)
 
 #Specific, console
-include(../../Classes/CppCanvas/CppCanvas.pri)
-include(../../Classes/CppContainer/CppContainer.pri)
-include(../../Classes/CppDotMatrix/CppDotMatrix.pri)
-include(../../Classes/CppDrawCanvas/CppDrawCanvas.pri)
-include(../../Classes/CppGeometry/CppGeometry.pri)
-include(../../Classes/CppPlane/CppPlane.pri)
-include(../../Classes/CppRibiRegex/CppRibiRegex.pri)
-include(../../Classes/CppXml/CppXml.pri)
+include(../RibiClasses/CppCanvas/CppCanvas.pri)
+include(../RibiClasses/CppContainer/CppContainer.pri)
+include(../DotMatrix/CppDotMatrix.pri)
+include(../RibiClasses/CppDrawCanvas/CppDrawCanvas.pri)
+include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
+include(../RibiClasses/CppGeometry/CppGeometry.pri)
+include(../RibiClasses/CppPlane/CppPlane.pri)
+include(../RibiClasses/CppRibiRegex/CppRibiRegex.pri)
+include(../RibiClasses/CppXml/CppXml.pri)
 
 #Specific, desktop
-include(../../Tools/ToolSurfacePlotter/ToolSurfacePlotterDesktop.pri)
-include(../../Classes/CppQtSurfacePlotWidget/CppQtSurfacePlotWidget.pri)
+include(ToolSurfacePlotterDesktop.pri)
+include(../RibiClasses/CppQtSurfacePlotWidget/CppQtSurfacePlotWidget.pri)
 
 SOURCES += qtmain.cpp
