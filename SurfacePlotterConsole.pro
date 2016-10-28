@@ -1,12 +1,9 @@
 # Fparser does not work with -Weffc++
-include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
+include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)
 include(../RibiLibraries/Apfloat.pri)
 include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/Fparser.pri)
-include(../RibiLibraries/Qwt.pri)
-
 include(../RibiLibraries/GeneralConsole.pri)
-include(../RibiLibraries/GeneralDesktop.pri)
 
 #Specific, console
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
@@ -18,9 +15,6 @@ include(../RibiClasses/CppGeometry/CppGeometry.pri)
 include(../RibiClasses/CppPlane/CppPlane.pri)
 include(../RibiClasses/CppRibiRegex/CppRibiRegex.pri)
 include(../RibiClasses/CppXml/CppXml.pri)
+include(SurfacePlotterConsole.pri)
 
-#Specific, desktop
-include(ToolSurfacePlotterDesktop.pri)
-include(../RibiClasses/CppQtSurfacePlotWidget/CppQtSurfacePlotWidget.pri)
-
-SOURCES += qtmain.cpp
+SOURCES += main.cpp

@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.If not, see <http://www.gnu.org/licenses/>.
 */
 //---------------------------------------------------------------------------
-//From http://www.richelbilderbeek.nl/ToolSurfacePlotter.htm
+//From http://www.richelbilderbeek.nl/SurfacePlotter.htm
 //---------------------------------------------------------------------------
 #ifndef QTSURFACEPLOTTERRIBIDIALOG_H
 #define QTSURFACEPLOTTERRIBIDIALOG_H

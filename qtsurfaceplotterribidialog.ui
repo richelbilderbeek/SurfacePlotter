@@ -14,7 +14,7 @@
    <string>SurfacePlotter</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="ToolSurfacePlotter.qrc">
+   <iconset resource="SurfacePlotter.qrc">
     <normaloff>:/images/R.png</normaloff>:/images/R.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -177,7 +177,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="ToolSurfacePlotter.qrc"/>
+  <include location="SurfacePlotter.qrc"/>
  </resources>
  <connections/>
 </ui>

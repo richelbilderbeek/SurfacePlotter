@@ -14,7 +14,7 @@
    <string>SurfacePlotter</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="ToolSurfacePlotter.qrc">
+   <iconset resource="SurfacePlotter.qrc">
     <normaloff>:/images/R.png</normaloff>:/images/R.png</iconset>
   </property>
   <property name="styleSheet">
@@ -33,7 +33,7 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolSurfacePlotter.qrc">:/images/ToolSurfacePlotterRibiImageSmall.png</pixmap>
+      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterRibiImageSmall.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -110,7 +110,7 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolSurfacePlotter.qrc">:/images/ToolSurfacePlotterQwtImageSmall.png</pixmap>
+      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterQwtImageSmall.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -123,7 +123,7 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolSurfacePlotter.qrc">:/images/ToolSurfacePlotterAbout.png</pixmap>
+      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterAbout.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -136,7 +136,7 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolSurfacePlotter.qrc">:/images/ToolSurfacePlotterQuit.png</pixmap>
+      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterQuit.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -147,7 +147,7 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="ToolSurfacePlotter.qrc"/>
+  <include location="SurfacePlotter.qrc"/>
  </resources>
  <connections/>
 </ui>

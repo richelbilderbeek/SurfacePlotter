@@ -11,4 +11,4 @@ OTHER_FILES += \
     $$PWD/Licence.txt
 
 RESOURCES += \
-    $$PWD/ToolSurfacePlotter.qrc
+    $$PWD/SurfacePlotter.qrc

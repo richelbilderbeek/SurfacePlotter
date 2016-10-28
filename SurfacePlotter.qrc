@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>R.png</file>
+        <file>SurfacePlotterMenuImage.png</file>
+        <file>SurfacePlotterQwtImage.png</file>
+        <file>SurfacePlotterQwtImageSmall.png</file>
+        <file>SurfacePlotterRibiImageSmall.png</file>
+        <file>SurfacePlotterAbout.png</file>
+        <file>SurfacePlotterQuit.png</file>
+    </qresource>
+</RCC>

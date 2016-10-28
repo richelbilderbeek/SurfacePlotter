@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.If not, see <http://www.gnu.org/licenses/>.
 */
 //---------------------------------------------------------------------------
-//From http://www.richelbilderbeek.nl/ToolSurfacePlotter.htm
+//From http://www.richelbilderbeek.nl/SurfacePlotter.htm
 //---------------------------------------------------------------------------
 #include "surfaceplottermenudialog.h"
 
@@ -84,7 +84,7 @@ ribi::About ribi::SurfacePlotterMenuDialog::GetAbout() const noexcept
     "plots a bivariate function",
     "the 7th of July 2014",
     "2012-2015",
-    "http://www.richelbilderbeek.nl/ToolSurfacePlotter.htm",
+    "http://www.richelbilderbeek.nl/SurfacePlotter.htm",
     GetVersion(),
     GetVersionHistory());
   //a.AddLibrary("Rectangle version: " + Rect::GetVersion());

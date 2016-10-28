@@ -1,4 +1,4 @@
-include(ToolSurfacePlotterConsole.pri)
+include(SurfacePlotterConsole.pri)
 
 SOURCES += \
     $$PWD/qtsurfaceplottermenudialog.cpp \
