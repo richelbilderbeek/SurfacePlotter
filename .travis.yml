@@ -38,14 +38,14 @@ before_script:
 script: 
   - ./download_other_githubs.sh
   - ./build_other_githubs.sh
-  - qmake ToolSurfacePlotterConsole.pro
+  - qmake SurfacePlotterConsole.pro
   - make
-  - ./ToolSurfacePlotterConsole
-  - qmake ToolSurfacePlotterDesktop.pro
+  - ./SurfacePlotterConsole
+  - qmake SurfacePlotterDesktop.pro
   - make
-  - ./ToolSurfacePlotterDesktop &
+  - ./SurfacePlotterDesktop &
   - sleep 10
-  - sudo killall -9 ToolSurfacePlotterDesktop
+  - sudo killall -9 SurfacePlotterDesktop
   - ./get_code_cov.sh >/dev/null
   - codecov >/dev/null
   - ./build_desktop.sh
