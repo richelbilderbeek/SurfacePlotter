@@ -18,3 +18,6 @@ include(../RibiClasses/CppXml/CppXml.pri)
 include(SurfacePlotterConsole.pri)
 
 SOURCES += main.cpp
+
+# QResources give this error
+QMAKE_CXXFLAGS += -Wno-unused-variable
