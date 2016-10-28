@@ -11,7 +11,7 @@ include(../RibiLibraries/GeneralDesktop.pri)
 #Specific, console
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
 include(../RibiClasses/CppContainer/CppContainer.pri)
-include(../DotMatrix/CppDotMatrix.pri)
+include(../DotMatrix/DotMatrix.pri)
 include(../RibiClasses/CppDrawCanvas/CppDrawCanvas.pri)
 include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
 include(../RibiClasses/CppGeometry/CppGeometry.pri)

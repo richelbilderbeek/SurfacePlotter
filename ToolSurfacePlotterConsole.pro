@@ -1,5 +1,5 @@
 # Fparser does not work with -Weffc++
-include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)4
+include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)
 include(../RibiLibraries/Apfloat.pri)
 include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/Fparser.pri)
@@ -8,7 +8,7 @@ include(../RibiLibraries/GeneralConsole.pri)
 #Specific, console
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
 include(../RibiClasses/CppContainer/CppContainer.pri)
-include(../DotMatrix/CppDotMatrix.pri)
+include(../DotMatrix/DotMatrix.pri)
 include(../RibiClasses/CppDrawCanvas/CppDrawCanvas.pri)
 include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
 include(../RibiClasses/CppGeometry/CppGeometry.pri)

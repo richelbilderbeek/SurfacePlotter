@@ -26,15 +26,11 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "fparser.hh"
 
 #include "drawcanvas.h"
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #include "testtimer.h"
 
 int ribi::SurfacePlotterMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   const int argc = static_cast<int>(argv.size());
   if (argc < 1)
   {
@@ -112,18 +108,9 @@ ribi::Help ribi::SurfacePlotterMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::SurfacePlotterMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    new ribi::ProgramSurfacePlotter
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::SurfacePlotterMenuDialog::GetVersion() const noexcept
 {
-  return "2.2";
+  return "3.0";
 }
 
 std::vector<std::string> ribi::SurfacePlotterMenuDialog::GetVersionHistory() const noexcept
@@ -133,18 +120,7 @@ std::vector<std::string> ribi::SurfacePlotterMenuDialog::GetVersionHistory() con
     "2010-02-15: version 1.1: let user specify the range of x and y coordinats",
     "2012-07-07: version 2.0: port to Qt",
     "2014-03-07: version 2.1: command-line version plots a hard-coded function",
-    "2014-07-07: version 2.2: added Qwt spectrogram"
+    "2014-07-07: version 2.2: added Qwt spectrogram",
+    "2016-10-28: version 3.0: moved to own GitHub, added Travis CI, conformized to others"
   };
 }
-
-#ifndef NDEBUG
-void ribi::SurfacePlotterMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif
