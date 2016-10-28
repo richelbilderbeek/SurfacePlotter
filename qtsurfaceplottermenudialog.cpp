@@ -36,9 +36,6 @@ ribi::QtSurfacePlotterMenuDialog::QtSurfacePlotterMenuDialog(QWidget *parent)
   : QtHideAndShowDialog(parent),
     ui(new Ui::QtSurfacePlotterMenuDialog)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
 }
 
@@ -74,18 +71,3 @@ void ribi::QtSurfacePlotterMenuDialog::on_button_ribi_clicked()
   d.setStyleSheet(this->styleSheet());
   this->ShowChild(&d);
 }
-
-#ifndef NDEBUG
-void ribi::QtSurfacePlotterMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  QtSurfacePlotterRibiDialog();
-  QtSurfacePlotterQwtDialog();
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif
-

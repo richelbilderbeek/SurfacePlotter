@@ -70,7 +70,7 @@ ribi::QwtSurfacePlotterPlot::QwtSurfacePlotterPlot(QWidget *parent)
 
 }
 
-QwtLinearColorMap * ribi::QwtSurfacePlotterPlot::CreateColorMap() noexcept
+QwtLinearColorMap * ribi::CreateColorMap() noexcept
 {
   QwtLinearColorMap * const color_map = new QwtLinearColorMap(Qt::red,Qt::blue);
   color_map->addColorStop(0.2,Qt::yellow);

@@ -3,11 +3,8 @@
 #pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 #pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
 #include <boost/shared_ptr.hpp>
-
 #include <qwt_plot.h>
 #pragma GCC diagnostic pop
-
-
 
 struct FunctionParser;
 struct QwtLinearColorMap;
@@ -20,7 +17,7 @@ struct QwtSurfacePlotterZoomer;
 
 class QwtSurfacePlotterPlot: public QwtPlot
 {
-    Q_OBJECT
+    Q_OBJECT //!OCLINT
 
 public:
   QwtSurfacePlotterPlot(QWidget * parent = nullptr);
@@ -45,9 +42,9 @@ public slots:
 
 private:
   QwtPlotSpectrogram * const m_spectrogram;
-  //boost::shared_ptr<QwtSurfacePlotterZoomer> m_zoomer;
 
-  static QwtLinearColorMap * CreateColorMap() noexcept;
 };
+
+QwtLinearColorMap * CreateColorMap() noexcept;
 
 } //~namespace ribi

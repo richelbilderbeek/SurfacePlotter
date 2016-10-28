@@ -31,7 +31,7 @@ namespace ribi {
 
 class QtSurfacePlotterRibiDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
     
 public:
   explicit QtSurfacePlotterRibiDialog(QWidget *parent = 0);
@@ -46,22 +46,6 @@ private slots:
 
 private:
   Ui::QtSurfacePlotterRibiDialog *ui;
-
-  /*
-  ///Rescale calculates a value between old_min and old_max its relative place and transforms
-  ///this relative position to a new_min and new_max
-  ///For example: for the old range [1,5], the value 2 is at 25% of this range. Transforming this
-  ///to the new range range [0,100] results in a 25
-  static double Rescale(
-    const double value,
-    const double oldMin,
-    const double oldMax,
-    const double newMin,
-    const double newMax);
-  */
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi

@@ -45,9 +45,6 @@ ribi::QtSurfacePlotterQwtDialog::QtSurfacePlotterQwtDialog(QWidget *parent)
     ui(new Ui::QtSurfacePlotterQwtDialog),
     m_plot(new QwtSurfacePlotterPlot(this))
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
 
   ui->edit_maxx->setValue( 1.0);
@@ -66,11 +63,10 @@ ribi::QtSurfacePlotterQwtDialog::QtSurfacePlotterQwtDialog(QWidget *parent)
     my_layout->addWidget(m_plot);
   }
 
-
   {
     //Put the dialog in the screen center at 50% x 50% of its size
     const QRect screen = QApplication::desktop()->screenGeometry();
-    this->setGeometry(0,0,screen.width() / 2,screen.height() /2 );
+    this->setGeometry(0,0,screen.width() / 2,screen.height() / 2);
     this->move( screen.center() - this->rect().center() );
   }
 
@@ -146,51 +142,5 @@ void ribi::QtSurfacePlotterQwtDialog::OnAnyChange()
     z_min,z_max
   );
 
-  //Evaluate the function in a 2D std::vector
-  /*
-  const int n_rows = ui->surfaceplotwidget->height();
-  const int n_cols = ui->surfaceplotwidget->width();
-  std::vector<std::vector<double> > v(n_rows,std::vector<double>(n_cols,0.0));
-  const double n_rows_d = static_cast<double>(n_rows);
-  const double n_cols_d = static_cast<double>(n_cols);
-
-  for (int y = 0; y!=n_rows; ++y)
-  {
-    const double yD = static_cast<double>(y);
-    const double y_scaled = Rescale(yD,0.0,n_rows_d,y_min,y_max);
-    for (int x = 0; x!=n_cols; ++x)
-    {
-      const double xD = static_cast<double>(x);
-      const double x_scaled = Rescale(xD,0.0,n_cols_d,x_min,x_max);
-      const double xs[2] = { x_scaled,y_scaled };
-      const double z = f.Eval(xs);
-      if (!f.EvalError())
-      {
-        v[y][x] = z;
-      }
-      else
-      {
-        v[y][x] = 0.0;
-      }
-    }
-  }
-  */
-
-
   this->setWindowTitle("Function plotted successfully");
-
-  //Plot the 2D std::vector
-  //ui->surfaceplotwidget->SetSurfaceGrey(v);
 }
-
-#ifndef NDEBUG
-void ribi::QtSurfacePlotterQwtDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

@@ -31,7 +31,7 @@ namespace ribi {
 
 class QtSurfacePlotterMenuDialog : public QtHideAndShowDialog
 {
-    Q_OBJECT
+    Q_OBJECT //!OCLINT
     
 public:
   explicit QtSurfacePlotterMenuDialog(QWidget *parent = 0);
@@ -47,10 +47,6 @@ private slots:
 
 private:
   Ui::QtSurfacePlotterMenuDialog *ui;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi

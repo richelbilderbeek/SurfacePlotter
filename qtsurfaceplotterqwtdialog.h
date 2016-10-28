@@ -33,7 +33,7 @@ struct QwtSurfacePlotterPlot;
 
 class QtSurfacePlotterQwtDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
     
 public:
   explicit QtSurfacePlotterQwtDialog(QWidget *parent = 0);
@@ -48,10 +48,6 @@ private slots:
 private:
   Ui::QtSurfacePlotterQwtDialog *ui;
   QwtSurfacePlotterPlot * const m_plot;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi
