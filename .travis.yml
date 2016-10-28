@@ -48,7 +48,6 @@ script:
   - sudo killall -9 SurfacePlotterDesktop
   - ./get_code_cov.sh >/dev/null
   - codecov >/dev/null
-  - ./build_desktop.sh
   - ./do_oclint.sh
 
 after_success:
