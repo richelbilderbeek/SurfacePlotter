@@ -25,7 +25,7 @@ include(../RibiClasses/CppXml/CppXml.pri)
 
 #Specific, desktop
 include(SurfacePlotterDesktop.pri)
-include(../RibiClasses/CppQtSurfacePlotWidget/CppQtSurfacePlotWidget.pri)
+include(QtSurfacePlotWidget.pri)
 
 SOURCES += qtmain.cpp
 
