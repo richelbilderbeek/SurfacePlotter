@@ -27,8 +27,8 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "qtsurfaceplotterqwtdialog.h"
 #include "qtsurfaceplotterribidialog.h"
 #include "qtsurfaceplottermenudialog.h"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #include "ui_qtsurfaceplottermenudialog.h"
 #pragma GCC diagnostic pop
 

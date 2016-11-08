@@ -33,8 +33,8 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include <QKeyEvent>
 
 #include "fparser.hh"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #include "ui_qtsurfaceplotterqwtdialog.h"
 #include "qwtsurfaceplotterplot.h"
 

@@ -30,9 +30,9 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include <QDesktopWidget>
 #include <QKeyEvent>
 
-#include "testtimer.h"
+
 #include "fparser.hh"
-#include "trace.h"
+
 #include "ui_qtsurfaceplotterribidialog.h"
 
 #pragma GCC diagnostic pop
