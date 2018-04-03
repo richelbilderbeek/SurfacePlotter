@@ -1,5 +1,5 @@
 # Fparser does not work with -Weffc++
-include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
+#include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
 include(../RibiLibraries/Apfloat.pri)
 include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/Fparser.pri)
