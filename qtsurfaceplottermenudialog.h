@@ -1,7 +1,7 @@
 #ifndef QTSURFACEPLOTTERMENUDIALOG_H
 #define QTSURFACEPLOTTERMENUDIALOG_H
 
-#include "qthideandshowdialog.h"
+#include <QDialog>
 
 namespace Ui {
   class QtSurfacePlotterMenuDialog;
@@ -9,7 +9,7 @@ namespace Ui {
 
 namespace ribi {
 
-class QtSurfacePlotterMenuDialog : public QtHideAndShowDialog
+class QtSurfacePlotterMenuDialog : public QDialog
 {
     Q_OBJECT //!OCLINT
     
