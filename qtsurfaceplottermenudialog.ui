@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>229</width>
-    <height>292</height>
+    <width>173</width>
+    <height>222</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,19 +27,6 @@ QPushButton { font: 32px &quot;Courier New&quot;, courier, monospace }
 QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QLabel" name="label_welcome">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterRibiImageSmall.png</pixmap>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1">
     <widget class="QPushButton" name="button_ribi">
      <property name="sizePolicy">
@@ -73,22 +60,6 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QPushButton" name="button_about">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="text">
-      <string> &amp;About </string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1">
     <widget class="QPushButton" name="button_quit">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
@@ -118,25 +89,25 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
     </widget>
    </item>
    <item row="2" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterAbout.png</pixmap>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
     <widget class="QLabel" name="label_3">
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
       <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterQuit.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_welcome">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="SurfacePlotter.qrc">:/images/SurfacePlotterRibiImageSmall.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
