@@ -39,10 +39,10 @@ script:
   - ./download_other_githubs.sh
   - ./build_other_githubs.sh
   - qmake SurfacePlotterConsole.pro
-  - make
+  - make --silent
   - ./SurfacePlotterConsole
   - qmake SurfacePlotterDesktop.pro
-  - make
+  - make --silent
   - ./SurfacePlotterDesktop &
   - sleep 10
   - sudo killall -9 SurfacePlotterDesktop
