@@ -8,7 +8,11 @@ include(QtSurfacePlotWidget.pri)
 
 include(../RibiLibraries/Apfloat.pri)
 include(../RibiLibraries/Fparser.pri)
-include(../RibiLibraries/Qwt.pri)
+# include(../RibiLibraries/Qwt.pri)
+
+QT += core widgets
+
+LIBS += -lqwt
 
 SOURCES += qtmain.cpp
 

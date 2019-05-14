@@ -1,6 +1,5 @@
-include(SurfacePlotterConsole.pri)
-
 SOURCES += \
+    $$PWD/surfaceplottermenudialog.cpp \
     $$PWD/qtsurfaceplottermenudialog.cpp \
     $$PWD/qtsurfaceplotterqwtdialog.cpp \
     $$PWD/qtsurfaceplotterribidialog.cpp \
@@ -14,6 +13,7 @@ FORMS += \
     $$PWD/qtsurfaceplotterribidialog.ui
 
 HEADERS += \
+    $$PWD/surfaceplottermenudialog.h \
     $$PWD/qtsurfaceplottermenudialog.h \
     $$PWD/qtsurfaceplotterqwtdialog.h \
     $$PWD/qtsurfaceplotterribidialog.h \
