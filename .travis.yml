@@ -24,10 +24,7 @@ services:
 script: 
   - ./download_other_githubs.sh
   - ./build_other_githubs.sh
-  - qmake SurfacePlotterConsole.pro
-  - make --silent
-  - ./SurfacePlotterConsole
-  - qmake SurfacePlotterDesktop.pro
+  - qmake -qt=qt5 SurfacePlotterDesktop.pro
   - make --silent
   - ./SurfacePlotterDesktop &
   - sleep 10
