@@ -8,7 +8,9 @@ include(QtSurfacePlotWidget.pri)
 
 include(../RibiLibraries/Apfloat.pri)
 include(../RibiLibraries/Fparser.pri)
-include(../RibiLibraries/Qwt.pri)
+
+# Qwt
+LIBS += -lqwt-qt5
 
 SOURCES += qtmain.cpp
 
