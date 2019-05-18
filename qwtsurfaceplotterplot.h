@@ -1,10 +1,8 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
-#include <boost/shared_ptr.hpp>
-#include <qwt_plot.h>
-#pragma GCC diagnostic pop
+#ifndef RIBI_QWTSURFACEPLOTTERPLOT_H
+#define RIBI_QWTSURFACEPLOTTERPLOT_H
+
+#include <memory>
+#include <qwt/qwt_plot.h>
 
 struct FunctionParser;
 struct QwtLinearColorMap;
@@ -26,7 +24,7 @@ public:
 
 public slots:
   void SetData(
-    const boost::shared_ptr<FunctionParser>& function_parser,
+    const std::shared_ptr<FunctionParser>& function_parser,
     const double minx, const double maxx,
     const double miny, const double maxy,
     const double minz, const double maxz
@@ -48,3 +46,5 @@ private:
 QwtLinearColorMap * CreateColorMap() noexcept;
 
 } //~namespace ribi
+
+#endif // RIBI_QWTSURFACEPLOTTERPLOT_H

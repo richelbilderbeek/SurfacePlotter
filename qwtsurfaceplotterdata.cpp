@@ -1,20 +1,11 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
 #include "qwtsurfaceplotterdata.h"
 
 #include <cassert>
 
-#include <boost/make_shared.hpp>
-
 #include "fparser.hh"
 
-#pragma GCC diagnostic pop
-
-
 ribi::QwtSurfacePlotterData::QwtSurfacePlotterData(
-  const boost::shared_ptr<FunctionParser>& function_parser,
+  const std::shared_ptr<FunctionParser>& function_parser,
   //const std::string& function_str,
   const double minx, const double maxx,
   const double miny, const double maxy,

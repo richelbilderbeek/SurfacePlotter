@@ -1,33 +1,8 @@
-//---------------------------------------------------------------------------
-/*
-SurfacePlotter, plots a bivariate function
-Copyright (C) 2010-2015 Richel Bilderbeek
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program.If not, see <http://www.gnu.org/licenses/>.
-*/
-//---------------------------------------------------------------------------
-//From http://www.richelbilderbeek.nl/SurfacePlotter.htm
-//---------------------------------------------------------------------------
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
 #include "qtsurfaceplotterqwtdialog.h"
 
 #include <cassert>
 
 #include <boost/lexical_cast.hpp>
-#include <boost/make_shared.hpp>
 
 #include <QDesktopWidget>
 #include <QKeyEvent>
@@ -37,8 +12,6 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include "ui_qtsurfaceplotterqwtdialog.h"
 #include "qwtsurfaceplotterplot.h"
-
-#pragma GCC diagnostic pop
 
 ribi::QtSurfacePlotterQwtDialog::QtSurfacePlotterQwtDialog(QWidget *parent)
   : QDialog(parent),
@@ -102,7 +75,7 @@ void ribi::QtSurfacePlotterQwtDialog::keyPressEvent(QKeyEvent * e)
 
 void ribi::QtSurfacePlotterQwtDialog::OnAnyChange()
 {
-  const auto f = boost::make_shared<FunctionParser>();
+  const auto f = std::make_shared<FunctionParser>();
 
   //Parse the formula
   f->Parse(ui->edit_equation->text().toStdString().c_str(),"x,y");

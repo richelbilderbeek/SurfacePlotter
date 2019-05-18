@@ -3,12 +3,7 @@
 
 #include <string>
 #include <vector>
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 #include <QWidget>
-#pragma GCC diagnostic pop
 
 namespace ribi {
 

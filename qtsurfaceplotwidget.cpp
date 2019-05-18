@@ -2,15 +2,9 @@
 #include <cassert>
 #include <vector>
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
 #include <QPainter>
 
 #include "qtsurfaceplotwidget.h"
-
-#pragma GCC diagnostic pop
 
 ribi::QtSurfacePlotWidget::QtSurfacePlotWidget(QWidget *parent)
   : QWidget(parent),

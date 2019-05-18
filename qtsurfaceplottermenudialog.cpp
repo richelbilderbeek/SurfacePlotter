@@ -1,13 +1,9 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 #include "qtsurfaceplotwidget.h"
 #include "surfaceplottermenudialog.h"
 #include "qtsurfaceplotterqwtdialog.h"
 #include "qtsurfaceplotterribidialog.h"
 #include "qtsurfaceplottermenudialog.h"
 #include "ui_qtsurfaceplottermenudialog.h"
-#pragma GCC diagnostic pop
 
 ribi::QtSurfacePlotterMenuDialog::QtSurfacePlotterMenuDialog(QWidget *parent)
   : QDialog(parent),

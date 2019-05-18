@@ -1,16 +1,10 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
 #include <cassert>
 
-#include <boost/make_shared.hpp>
-
-#include <qwt_plot_spectrogram.h>
-#include <qwt_scale_widget.h>
-#include <qwt_plot_panner.h>
-#include <qwt_plot_layout.h>
-#include <qwt_color_map.h>
+#include <qwt/qwt_plot_spectrogram.h>
+#include <qwt/qwt_scale_widget.h>
+#include <qwt/qwt_plot_panner.h>
+#include <qwt/qwt_plot_layout.h>
+#include <qwt/qwt_color_map.h>
 
 #include "fparser.hh"
 
@@ -18,7 +12,6 @@
 #include "qwtsurfaceplotterzoomer.h"
 #include "qwtsurfaceplotterdata.h"
 //#include "qwtsurfaceplottercolormap.h"
-#pragma GCC diagnostic pop
 
 ribi::QwtSurfacePlotterPlot::QwtSurfacePlotterPlot(QWidget *parent)
   : QwtPlot(parent),
@@ -87,7 +80,7 @@ void ribi::QwtSurfacePlotterPlot::SetData(
   const double minz, const double maxz
 )
 {
-  const auto f = boost::make_shared<FunctionParser>();
+  const auto f = std::make_shared<FunctionParser>();
   f->Parse(function_str,"x,y");
   if (f->GetParseErrorType() != FunctionParser::FP_NO_ERROR)
   {
@@ -104,7 +97,7 @@ void ribi::QwtSurfacePlotterPlot::SetData(
 }
 
 void ribi::QwtSurfacePlotterPlot::SetData(
-  const boost::shared_ptr<FunctionParser>& function_parser,
+  const std::shared_ptr<FunctionParser>& function_parser,
   const double minx, const double maxx,
   const double miny, const double maxy,
   const double minz, const double maxz
