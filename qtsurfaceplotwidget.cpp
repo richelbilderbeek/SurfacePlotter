@@ -120,6 +120,7 @@ void ribi::QtSurfacePlotWidget::resizeEvent(QResizeEvent *)
 void ribi::QtSurfacePlotWidget::SetSurfaceGrey(const std::vector<std::vector<double>>& v)
 {
   //Get the size
+  assert(!v.empty());
   const int maxx = v[0].size();
   const int maxy = v.size();
   //Minimum and maximum are not given, so these need to be calculated
