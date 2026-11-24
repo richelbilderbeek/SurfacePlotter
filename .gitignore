@@ -29,3 +29,5 @@
 *.pro.user
 *.pro.user
 *.pro.user.*
+
+site/
